@@ -1,0 +1,240 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background: url(../img/main-block-4-2.png) no-repeat center center;
+  height: 780px;
+  box-sizing: border-box;
+}
+header .header-try {
+  display: inline-block;
+  padding: 3%;
+  height: 161px;
+  width: 9.53%;
+  float: left;
+}
+header .header-try img {
+  max-width: 100%;
+}
+header .header-text {
+  vertical-align: top;
+  width: 50%;
+  margin: 0 auto;
+}
+header .header-text h1 {
+  margin: 0;
+  padding-top: 6%;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.6em;
+  font-family: Verdana, sans-serif;
+}
+/*.header-btn{
+	background: #ffffff;
+	border-radius: 2px;
+	content: "";
+	height: 3px;
+	left: 24px;
+	position: absolute;
+	top: 26px;
+	width: 23px;
+	float: right;
+	&__element{
+	position: absolute;
+	width: 23px;
+	height: 3px;
+	background: #ffffff;
+	left: 24px;
+	top: 34px;
+	border-radius: 2px;
+		& :before {
+			position: absolute;
+			width: 23px;
+			height: 3px;
+			background: #ffffff;
+			left: 24px;
+			top: 34px;
+			border-radius: 2px;
+		}
+	}
+}*/
+.header-btn {
+  cursor: pointer;
+  height: 70px;
+  width: 70px;
+  position: fixed;
+  transition: all .7s;
+  top: 5%;
+  right: 4%;
+  display: inline-block;
+  border-radius: 35px;
+  background-color: #f40000;
+}
+.header-btn a {
+  display: block;
+  height: 100%;
+}
+.header-btn:hover {
+  transform: rotate(180deg);
+  background-color: #ffffff;
+}
+.header-btn:hover span {
+  background-color: #f40000;
+}
+.header-btn__element1 {
+  position: absolute;
+  width: 23px;
+  height: 3px;
+  background: #ffffff;
+  left: 24px;
+  top: 24px;
+  border-radius: 2px;
+}
+.header-btn__element2 {
+  position: absolute;
+  width: 23px;
+  height: 3px;
+  background: #ffffff;
+  left: 24px;
+  top: 34px;
+  border-radius: 2px;
+}
+.header-btn__element3 {
+  position: absolute;
+  width: 23px;
+  height: 3px;
+  background: #ffffff;
+  left: 24px;
+  top: 44px;
+  border-radius: 2px;
+}
+.header-promo {
+  position: absolute;
+  color: white;
+  left: 58%;
+  top: 260px;
+  width: 35%;
+  height: 60%;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.header-promo div {
+  vertical-align: baseline;
+  position: relative;
+  padding: 20px 0 62px 137px;
+}
+.header-promo a,
+.header-promo span {
+  color: #f40000;
+}
+.header-promo-one::before {
+  content: '';
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: url(../img/cans-step-1.png) no-repeat center center #f40000;
+}
+.header-promo-one::after {
+  content: '';
+  position: absolute;
+  left: 60px;
+  bottom: 5px;
+  width: 1px;
+  height: 31px;
+  border-radius: 50%;
+  background: #f40000;
+}
+.header-promo-two::before {
+  content: '';
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: url(../img/cans-step-2.png) no-repeat center center #f40000;
+}
+.header-promo-two::after {
+  content: '';
+  position: absolute;
+  left: 60px;
+  bottom: 5px;
+  width: 1px;
+  height: 31px;
+  border-radius: 50%;
+  background: #f40000;
+}
+.header-promo-three::before {
+  content: '';
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: url(../img/cans-step-3.png) no-repeat center center #f40000;
+}
+.popup {
+  color: white;
+  box-sizing: border-box;
+  border: 3px solid red;
+  border-radius: 20px;
+  position: fixed;
+  padding: 2rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+  height: 400px;
+  width: 400px;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../img/sky.jpg);
+  background-color: #26192A;
+}
+.popup h1 {
+  text-indent: 1rem;
+}
+.popup-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+}
+.popup-overlay:target {
+  z-index: 99;
+  opacity: 1;
+}
+.popup-overlay:target + .popup {
+  z-index: 999;
+  opacity: 1;
+}
+.popup-close {
+  position: absolute;
+  top: .7rem;
+  right: 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.popup:target {
+  opacity: 1;
+}
+.popup-image-hight {
+  position: absolute;
+  top: -75px;
+  left: -20px;
+  width: 150px;
+}
+.popup-image-low {
+  position: absolute;
+  height: 150px;
+  bottom: 0px;
+  right: 10px;
+}
