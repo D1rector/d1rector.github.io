@@ -1,0 +1,135 @@
+header {
+  padding: 2% 2%;
+}
+.header-logo {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.header-phone {
+  margin-top: -0.7%;
+}
+.header-phone > p {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left: 5%;
+}
+.header-phone > a {
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 0.8rem;
+  padding: 5% 10%;
+  color: black;
+}
+.header-phone > a:hover {
+  color: #ffffff;
+  background-color: #292d30;
+}
+.main {
+  background-color: #292d30;
+}
+.main .main-nav {
+  margin-bottom: 0px;
+  list-style: none;
+  text-align: center;
+}
+.main .main-nav a {
+  color: #ffffff;
+}
+.main li {
+  font-size: 1.8rem;
+  padding: 2%;
+  display: inline-block;
+}
+.main-text {
+  background: url(../img/Без-имени-1.jpg) no-repeat center center;
+  background-size: cover;
+  /*бг становится правильно*/
+  color: #ffffff;
+  text-align: center;
+  height: 800px;
+}
+.main-text h1 {
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  margin: 0;
+  padding: 20rem 1rem 1rem 1rem;
+  font-size: 7rem;
+  font-weight: normal;
+}
+.main-text h2 {
+  margin: 0;
+  padding: 1rem;
+}
+.main-present {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.main-video-wrap {
+  position: relative;
+}
+.main-video {
+  position: relative;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  font-weight: normal;
+  font-size: 1.8rem;
+}
+.main-video::after {
+  content: url(../img/arrow.png);
+  position: relative;
+  vertical-align: middle;
+  bottom: -60px;
+  right: 0px;
+  height: 10rem;
+}
+.main-btn {
+  background-color: #059feb;
+  border: none;
+  border-radius: 2.5rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+}
+.main-leaf {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-top: 6rem;
+}
+.main-leaf::after {
+  content: url(../img/mouse.png);
+  display: block;
+  height: 6rem;
+}
+.main img {
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  height: 2rem;
+  max-width: 100%;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+.title {
+  padding-left: 1rem;
+  border-left: 3px solid #059feb;
+}
+.title p {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
