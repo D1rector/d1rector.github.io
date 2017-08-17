@@ -1,0 +1,205 @@
+/*p:nth-of-type(1){
+	color: red;
+	font-family: 'Conv_P22UndergroundCYPro-Book', sans-serif;
+}
+p:nth-of-type(2){
+	color: blue;
+	font-family: 'Conv_P22UndergroundCYPro-Demi', sans-serif;
+}
+p:nth-of-type(3){
+	color: yellow;
+	font-family: 'Conv_P22UndergroundCYPro-Heavy', sans-serif;
+}
+p:nth-of-type(4){
+	color: purple;
+	font-family: 'Conv_P22UndergroundCYPro-Medium', sans-serif;
+}
+p:nth-of-type(5){
+	color: green;
+	font-family: 'Conv_P22UndergroundCYPro-Thin', sans-serif;
+}*/
+@font-face {
+  font-family: 'Conv_P22UndergroundCYPro-Book';
+  src: url('../fonts/P22UndergroundCYPro-Book.eot');
+  src: url('../fonts/P22UndergroundCYPro-Book.woff') format('woff'), url('../fonts/P22UndergroundCYPro-Book.ttf') format('truetype'), url('../fonts/P22UndergroundCYPro-Book.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_P22UndergroundCYPro-Demi';
+  src: url('../fonts/P22UndergroundCYPro-Demi.eot');
+  src: url('../fonts/P22UndergroundCYPro-Demi.woff') format('woff'), url('../fonts/P22UndergroundCYPro-Demi.ttf') format('truetype'), url('../fonts/P22UndergroundCYPro-Demi.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_P22UndergroundCYPro-Heavy';
+  src: url('../fonts/P22UndergroundCYPro-Heavy.eot');
+  src: local('☺'), url('../fonts/P22UndergroundCYPro-Heavy.woff') format('woff'), url('../fonts/P22UndergroundCYPro-Heavy.ttf') format('truetype'), url('../fonts/P22UndergroundCYPro-Heavy.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_P22UndergroundCYPro-Medium';
+  src: url('f../onts/P22UndergroundCYPro-Medium.eot');
+  src: local('☺'), url('../fonts/P22UndergroundCYPro-Medium.woff') format('woff'), url('../fonts/P22UndergroundCYPro-Medium.ttf') format('truetype'), url('../fonts/P22UndergroundCYPro-Medium.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_P22UndergroundCYPro-Thin';
+  src: url('../fonts/P22UndergroundCYPro-Thin.eot');
+  src: local('☺'), url('../fonts/P22UndergroundCYPro-Thin.woff') format('woff'), url('../fonts/P22UndergroundCYPro-Thin.ttf') format('truetype'), url('../fonts/P22UndergroundCYPro-Thin.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  position: relative;
+  width: 100vw;
+  background: url(../img/bg.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.header-money img {
+  position: absolute;
+  margin: -75px 0 0 -130px;
+  top: 100%;
+  left: 50%;
+}
+.header-logo {
+  padding-top: 5%;
+  color: white;
+}
+.header-logo span {
+  font-family: 'Conv_P22UndergroundCYPro-Heavy', sans-serif;
+  font-size: 1.8rem;
+}
+.header-logo ::before {
+  content: url(../img/лого.svg);
+  height: 50px;
+  width: 100px;
+  float: left;
+}
+.header-phone {
+  padding-top: 5%;
+  font-family: 'Conv_P22UndergroundCYPro-Heavy', sans-serif;
+  font-size: 2rem;
+  color: white;
+  /*float: right;*/
+  text-align: right;
+  line-height: 4rem;
+}
+.header-phone span {
+  font-family: 'Conv_P22UndergroundCYPro-Thin', sans-serif;
+  font-size: 1.8rem;
+  display: inline-block;
+  height: 4rem;
+  width: 20rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  text-align: center;
+  margin-right: 3rem;
+}
+.header-title {
+  color: #ffff33;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-size: 3rem;
+}
+.header-reasons {
+  margin-top: 10rem;
+  color: white;
+  list-style-image: url(../img/li-arrow.png);
+  font-family: 'Conv_P22UndergroundCYPro-Book', sans-serif;
+  font-size: 2rem;
+}
+.header-form {
+  background-color: #fff;
+  padding: 1rem 4rem 3rem 4rem;
+  border-radius: .7rem;
+  margin-bottom: 5rem;
+}
+.header-form h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0 2rem  0;
+}
+.header-form input[type="text"] {
+  height: 99%;
+  width: 60%;
+  margin-left: 7rem;
+  line-height: 6rem;
+  font-family: 'Conv_P22UndergroundCYPro-Book', sans-serif;
+  border: none;
+}
+.header-form-name-div {
+  border: 1px solid black;
+  height: 6rem;
+  position: relative;
+  margin: 1rem 0 1rem 0;
+  border-radius: .7rem;
+}
+.header-form-name-div::before {
+  position: absolute;
+  left: 0;
+  content: url(../img/face.png);
+  text-align: center;
+  padding-top: 2rem;
+  background-color: #000;
+  display: inline-block;
+  height: 5.9rem;
+  width: 5.9rem;
+  border-radius: .7rem;
+}
+.header-form-phone-div {
+  border: 1px solid black;
+  height: 6rem;
+  position: relative;
+  margin: 1rem 0 1rem 0;
+  border-radius: .7rem;
+}
+.header-form-phone-div::before {
+  position: absolute;
+  left: 0;
+  content: url(../img/face.png);
+  text-align: center;
+  padding-top: 2rem;
+  background-color: #000;
+  display: inline-block;
+  height: 5.9rem;
+  width: 5.9rem;
+  border-radius: .7rem;
+}
+.header-form-btn {
+  font-family: 'Conv_P22UndergroundCYPro-Book', sans-serif;
+  height: 5rem;
+  width: 23.5rem;
+  background-color: #ffff33;
+  border-radius: .7rem;
+  border: none;
+  box-shadow: 0 0.3rem #999900;
+}
+.improvements {
+  margin-top: 7rem;
+}
+.improvements p {
+  margin: 0 auto;
+  width: 9rem;
+  text-align: center;
+  font-size: 1rem;
+}
+.improvements-yellow {
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  border-radius: 50%;
+  background-color: yellow;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0 auto;
+}
+.improvements-yellow img {
+  align-self: center;
+  /*вот это вот вместе с дислей-флекс и джастивай-контент выравнивает картинку по центру!*/
+}
