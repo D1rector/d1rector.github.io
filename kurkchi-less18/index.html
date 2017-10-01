@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+</head>
+<body>
+
+<section>
+<div class="picture">
+	<img src="img/pict.png" alt="picture">
+</div><div class="container">
+	<h1 class="container-header">Сохрани свой аккаунт</h1>
+	<p class="container-paragraph">Получи бесплатно неограниченное количество  
+		форм, вопросов и ответов.
+	</p>
+	<form id="form" action="thanks.html">
+		<div class="form-name">
+			<input type="text" id="input-name" placeholder="Имя или никнейм" class="form-control">
+		</div>
+		<div class="form-email">
+			<input type="text" id="input-mail" required placeholder="Email" class="form-control">
+		</div>
+		<div class="form-password">
+			<input type="text" id="input-password" placeholder="Пароль" class="form-control">
+		</div class="form-name">
+		<button class="btn btn-primary" type="button">Сохранить > </button>
+	</form>
+	<p>Уже есть аккаунт? <a href="#" style="color: red">Войти</a></p>
+</div>
+</section>
+
+	<script src="js/jquery-3.2.1.js"></script>
+	<script>
+		$(document).ready(function(){
+			var btn = $('.btn');
+			
+			var regMail=/@/;
+			var regPass=/\w{6,20}/;
+			function validateName(formName){
+				var regName=/^[a-z]\w{3,15}/i;
+				result = formName.match(regName)
+				if(result===null){
+					alert("Имя должно начинаться с буквы и быть длиннее трех символов!");
+					return(false);
+				}else{
+				return(true);}
+			}
+			function validateMail(formMail){
+				var regMail=/@/;
+				result = formMail.match(regMail)
+				if(result===null){
+					alert("У тебя даже собаки в мыле нет!!!");
+					return(false);
+				}else{
+				return(true);}
+			}
+			function validatePass(formPass){
+				var regPass=/\w{5,20}/;
+				result = formPass.match(regPass)
+				if(result===null){
+					alert("Пароль должен быть от 5 до 20 символов!");
+					return(false);
+				}else{
+				return(true);}
+			}
+			btn.click(function(){
+				var userName=$('#input-name').val();
+				var userPassword=$('#input-password').val();
+				var userMail=$('#input-mail').val();
+				var form = $('#form');
+				if(validateName(userName)&&
+				validateMail(userMail)&&
+				validatePass(userPassword)){
+					form.submit();
+				}// console.log(result);
+				// console.log('Nhfnfnf');
+			})
+			})
+	</script>
+<!-- div*2>a[href="#content-$"][class=tab$]{loremru10}+div[class=accordion-$][id=content-$]>p -->
+</body>
+</html>

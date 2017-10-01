@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url("../img/bg.jpg") no-repeat center center;
+}
+section {
+  position: relative;
+  display: block;
+  width: 1000px;
+  height: 700px;
+  background-color: #fff;
+  margin: 100px auto;
+  /*padding: 100px 50px;*/
+}
+.picture {
+  position: absolute;
+  top: 24%;
+  left: 6%;
+  display: inline-block;
+  width: 45%;
+  height: 99%;
+}
+.container {
+  position: absolute;
+  top: 12%;
+  right: 10%;
+  max-width: 350px;
+  /*margin: 100px 50px 100px 50px;*/
+  display: inline-block;
+  height: 400px;
+  /*padding: 25px 50px;*/
+}
+.container-header {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.container-paragraph {
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  padding-bottom: 60px;
+}
+.container form {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.container form input {
+  width: 90%;
+  height: 99%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  box-shadow: unset;
+}
+.container form input:focus {
+  box-shadow: unset;
+}
+.container form input::placeholder {
+  font-size: 1.15rem;
+}
+.container form .btn {
+  margin-top: 45px;
+  border-radius: 27px;
+  height: 54px;
+  width: 180px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+form div {
+  height: 34px;
+  margin-top: 20px ;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #888888;
+  margin-bottom: 30px;
+}
+form div::before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+}
+.form-name::before {
+  background: url(../img/name.png) no-repeat center center;
+}
+.form-email::before {
+  background: url(../img/mail.png) no-repeat center center;
+}
+.form-password::before {
+  background: url(../img/password.png) no-repeat center center;
+}
